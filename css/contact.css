@@ -1,0 +1,130 @@
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+body{
+    font-family: chelsea market; verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #6598E4;
+}  
+p{
+    font-family: 'work sans', sans-serif;
+}
+#checkbox-menu:checked ~ nav,
+nav a,
+.active{
+    display: block;
+}
+#checkbox-menu, nav{
+    display: none; 
+}
+.fa{
+    padding:10px;   
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+nav a:hover{
+    cursor: pointer;
+    color:#3E9730;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav_logo{
+    display: none;
+    font-family: 'Rampart One', sans-serif;
+    font-weight: bold;
+}
+nav{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: 88%;
+}
+.nav_logo_mobile{
+ text-align: center;
+ text-decoration: none;
+ color:#3E9730; 
+ padding: 10px;
+ font-family: 'rampart one';
+ background-color: rgba(255, 255, 255, 0.4);
+}
+main{
+    margin: 1.5em;
+}
+main, footer{
+    padding: 20px;
+}
+.header{
+    background-image: url(/img/exhibition-1863344_1920V2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px rgb(218, 216, 216);
+    padding:10vw; 
+    border-top: solid #1465DD;  
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.active{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.frontpage_img{
+   max-width: 33.3%;
+   display: flex;  
+}
+footer{
+    margin: 20px;
+    border-top:solid #1465DD;
+}
+@media only screen and (min-width: 600px){
+    .menu-icon, .nav_logo_mobile{
+        display:none;  
+    }
+    nav{ 
+        position: static;
+        display: block;
+    }
+    nav a{
+        color: rgb(0, 0, 0);
+    }
+    nav li{
+        font-size: 2vw;
+        float: right; 
+        list-style: none;
+    }  
+    nav a:hover, a:hover{
+        cursor: pointer;
+        color:#3E9730;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .nav_logo{
+        color:#236718;
+        float: left;
+        max-width: 140px;
+        font-size: 25px;
+        display: block;
+        padding:20px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .header{
+        margin-top: 4.5em;
+    }
+    footer{
+        margin: 20px;
+        border-top:solid #1465DD;
+    }
+}
+
+   
