@@ -167,19 +167,19 @@ p{
     margin: 20px;
 } 
 .one{
-    background-color: #3E9730;   
+    background-color: #ffffff;   
 }
 .two{
-    background-color: #45f52b; 
+    background-color: #ffffff; 
 }
 .three{
-    background-color: #198309;  
+    background-color: #ffffff;  
 }
 .four{
-    background-color: #64d452; 
+    background-color: #ffffff; 
 }
 .five{
-    background-color: #27eb08;  
+    background-color: #ffffff;  
 }
 @media only screen and (min-width: 600px) {
     .activities_text1,
