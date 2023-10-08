@@ -1,37 +1,42 @@
-html{
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-body{
-    font-family: chelsea market; verdana, sans-serif;
+
+body {
+    font-family: chelsea market;
+    verdana,
+    sans-serif;
     margin: 0;
     min-height: 100vh;
-    background-color: #6598E4;
+    background-color: #91b3e6;
 }
+
 body,
 .activities_item1,
 .activities_item2,
 .activities_item3,
-.container
-{
+.container {
     display: flex;
     flex-direction: column;
 }
-p{
+
+p {
     font-family: 'work sans', sans-serif;
 }
-#checkbox-menu:checked ~ nav,
+
+#checkbox-menu:checked~nav,
 nav a,
-.active
-{
+.active {
     display: block;
 }
-#checkbox-menu, 
+
+#checkbox-menu,
 nav,
-.nav_logo
-{
-    display: none; 
+.nav_logo {
+    display: none;
 }
+
 .fa,
 .activities_item1,
 .activities_item2,
@@ -39,92 +44,108 @@ nav,
 .nav_logo_mobile,
 h3,
 {
-    padding:10px;  
+padding: 10px;
 }
-nav a{
+
+nav a {
     margin-top: 60px;
     font-weight: bold;
-    padding:10px;
+    padding: 10px;
     color: rgb(255, 255, 255);
 }
+
 nav a,
 a,
 {
-    color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
 }
+
 nav a,
 .nav_logo_mobile,
 a,
-.active
-{
+.active {
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     cursor: pointer;
-    color:#236718
-    font-weight: bold;
+    color: #236718 font-weight: bold;
     transition: 0.3s;
 }
-.nav_logo{
+
+.nav_logo {
     font-family: 'Rampart One', sans-serif;
     font-weight: bold;
 }
-nav{
+
+nav {
     position: absolute;
     background-color: rgb(0, 0, 0);
     opacity: 88%;
 }
-.nav_logo_mobile{
-    
-    color:#3E9730; 
+
+.nav_logo_mobile {
+
+    color: #3E9730;
     font-family: 'rampart one';
     background-color: rgba(255, 255, 255, 0.4);
 }
+
 .nav_logo_mobile,
 .activities_text1,
 .activities_text2,
 .activities_text3,
-h3
-{
+h3 {
     text-align: center;
 }
-.header{
+
+.header {
     background-image: url(/img/mammoth-1257288_1920V2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.5em;
     text-shadow: 5px 5px rgb(218, 216, 216);
-    padding:10vw; 
+    padding: 10vw;
     border-top: solid #1465DD;
 }
+
 header,
 .activities_text1,
 .activities_text2,
 .activities_text3,
-.active
-{
+.active {
     color: rgb(0, 0, 0);
 }
-main{
-    align-items: center; 
-    margin-left: 10px; 
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 3.5rem;
+    width: 16rem;
+    margin-right: 50%;
+    padding: 1rem;
+}
+
+main {
+    align-items: center;
+    margin-left: 10px;
     margin-right: 30px;
 }
+
 .activities_item1,
 .activities_item2,
-.activities_item3{
-    border:solid;
-    margin: 10px
-    background-repeat: no-repeat;
-    background-size:cover;
+.activities_item3 {
+    border: solid;
+    margin: 10px background-repeat: no-repeat;
+    background-size: cover;
     height: 30vh;
     width: 100%;
     color: white;
     border: solid black
 }
+
 .activities_text1,
 .activities_text2,
-.activities_text3{
+.activities_text3 {
     background-color: rgba(255, 255, 255, 0.6);
     height: 100%;
     width: 50%;
@@ -134,125 +155,166 @@ main{
     border: solid rgb(0, 0, 0);
     font-size: 2.6vW;
 }
-.activities_text2{
+
+.activities_text2 {
     margin-left: 0%;
 }
+
 .activities_item1,
 .activities_item2,
-.activities_item3{
+.activities_item3 {
     max-width: 100%;
 }
-.activities_item1{
+
+.activities_item1 {
     background-image: url(/img/andrew-ruiz-348421V2.jpg);
     margin-bottom: 30px;
 }
-.activities_item2{
+
+.activities_item2 {
     background-image: url(/img/jesse-orrico-60373V2.jpg);
     margin-bottom: 30px;
 }
-.activities_item3{
+
+.activities_item3 {
     background-image: url(/img/learn-2405206_1920V2.jpg);
     margin-bottom: 40px;
 }
-.page_title,{
-    margin:30px;
+
+.page_title,
+{
+margin: 30px;
 }
-.item{
+
+.item {
 
     margin: 10px 0 10px 0;
     background-color: rgb(255, 255, 255);
 }
-p{
+
+p {
     font-family: 'work sans', sans-serif;
     margin: 20px;
-} 
-.one{
-    background-color: #ffffff;   
 }
-.two{
-    background-color: #ffffff; 
+
+.one {
+    background-color: #ffffff;
 }
-.three{
-    background-color: #ffffff;  
+
+.two {
+    background-color: #ffffff;
 }
-.four{
-    background-color: #ffffff; 
+
+.three {
+    background-color: #ffffff;
 }
-.five{
-    background-color: #ffffff;  
+
+.four {
+    background-color: #ffffff;
 }
+
+.five {
+    background-color: #ffffff;
+}
+
 @media only screen and (min-width: 600px) {
+
     .activities_text1,
     .activities_text2,
-    .activities_text3{
-    font-size: 1.4vW;
+    .activities_text3 {
+        font-size: 1.4vW;
     }
+
     .activities_item1,
     .activities_item2,
-    .activities_item3{
-    min-height:50vh;
+    .activities_item3 {
+        min-height: 50vh;
     }
-    main{
-    margin-left: 40px;
-    margin-right: 60px;
+
+    main {
+        margin-left: 40px;
+        margin-right: 60px;
     }
 }
+
 @media only screen and (max-width:480px) and (min-width: 350px) {
+
     .activities_text1,
     .activities_text2,
-    .activities_text3{
-    font-size: 1.8vW;    
+    .activities_text3 {
+        font-size: 1.8vW;
     }
+
     .activities_item1,
     .activities_item2,
-    .activities_item3{
-    min-height:20vh;
+    .activities_item3 {
+        min-height: 20vh;
     }
 }
+
 @media only screen and (max-width:1000px) and (min-width: 480px) {
+
     .activities_text1,
     .activities_text2,
-    .activities_text3{
-    font-size: 1.7vW;
+    .activities_text3 {
+        font-size: 1.7vW;
     }
 }
-@media only screen and (min-width: 600px){
-    .menu-icon, .nav_logo_mobile{
-        display:none;
+
+@media only screen and (min-width: 600px) {
+
+    .menu-icon,
+    .nav_logo_mobile {
+        display: none;
     }
-    nav{ 
+
+    nav {
         position: static;
         display: block;
     }
-    nav a{
+
+    nav a {
         color: rgb(0, 0, 0);
     }
-    nav li{
+
+    nav li {
         font-size: 2vw;
-        float: right; 
+        float: right;
         list-style: none;
-    }  
-    nav a:hover, 
-    a:hover{
+    }
+
+    nav a:hover,
+    a:hover {
         cursor: pointer;
-        color:#236718;
+        color: #ffffff;
         font-weight: bold;
         transition: 0.3s;
     }
-    .nav_logo{
-        color:#236718;
+
+    .nav_logo {
+        color: #236718;
         float: left;
         max-width: 140px;
         font-size: 25px;
         display: block;
-        padding:20px;
+        padding: 20px;
         background-color: rgba(255, 255, 255, 0.4);
     }
-    header{
-    padding-top:8em;
+
+    header {
+        padding-top: 8em;
     }
-    footer{
-    margin: 20px;
-    border-top:solid #1465DD;
+
+    h1 {
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 3.5rem;
+        width: 16rem;
+        margin-right: 50%;
+        padding: 1rem;
+    }
+
+    footer {
+        margin: 20px;
+        border-top: solid #1465DD;
     }
 }
