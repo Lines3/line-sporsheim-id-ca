@@ -1,176 +1,285 @@
-html{
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: chelsea market, verdana, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100%;
-    margin:0;
-    background-color: #6598E4;
+    margin: 0;
+    background-color: #91b3e6;
 }
-#checkbox-menu:checked ~ nav,
+
+#checkbox-menu:checked~nav,
 nav a,
 .form__input,
 #purchasebutton,
-#checkbox_newsletter, 
+#checkbox_newsletter,
 #checkbox_consent,
-.active
-{
+.active {
     display: block;
 }
+
 #checkbox-menu,
 nav,
-.nav_logo
-{
-    display: none; 
+.nav_logo {
+    display: none;
 }
+
 .fa,
 nav a,
-.nav_logo_mobile{
-    padding:10px;  
+.nav_logo_mobile {
+    padding: 10px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     margin-top: 60px;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
-nav a:hover{
-    cursor: pointer; 
+
+nav a:hover {
+    cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+    color: #ffffff;
 }
-nav a:hover,
-.nav_logo_mobile,
-{
-    color: #3E9730; 
+
+main {
+    padding: 20px;
 }
-main{
-    padding:20px;
-}
-p{
+
+p {
     font-family: 'work sans', sans-serif;
 }
 
-.nav_logo{
+.nav_logo {
     font-family: 'Rampart One', sans-serif;
     font-weight: bold;
 }
-nav{
-    position: absolute; 
+
+nav {
+    position: absolute;
     background-color: rgb(0, 0, 0);
     opacity: 88%;
 }
-.nav_logo_mobile{
+
+.nav_logo_mobile {
     text-align: center;
     text-decoration: none;
     font-family: 'rampart one';
     background-color: rgba(255, 255, 255, 0.4);
 }
-.header{
+
+.header {
     background-image: url(/img/heart-2607178_1920V2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2em;
     color: rgb(0, 0, 0);
     text-shadow: 5px 5px rgb(218, 216, 216);
-    padding:10vw; 
+    padding: 10vw;
     border-top: solid #1465DD;
 }
+
 .form__input,
-fieldset{
-    border-color:#3E9730;    
+fieldset {
+    border-color: #3E9730;
 }
 
-form{
+form {
     max-width: 600px;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
-fieldset{
-    max-width: 50%;
+
+input {
+    height: 2rem;
+    font-size: large;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 12px;
 }
-.price{
+
+#tickets {
+    width: 10rem;
+    height: 5rem;
+
+}
+
+.numberOfTickets {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+button {
+    background-color: #1465DD;
+    margin: 2px;
+    border: #1465DD;
+    padding: 5px;
+    height: 2rem;
+    width: 7rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 12px;
+
+}
+
+#purchaseButton:hover {
+    background-color: #126572;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+
+button.hover {
+    color: #e90e0e;
+}
+
+
+.formError {
+    display: none;
+    color: #e90e0e;
+    font-size: small;
+}
+
+.price {
     font-size: 2em;
     color: rgb(0, 0, 0);
 }
-#purchasebutton{
+
+#purchasebutton {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    padding:0.2rem;
+    padding: 0.2rem;
     cursor: pointer;
     font-family: chelsea market, sans-serif;
 }
-#purchasebutton:hover{
+
+#purchasebutton:hover {
     background-color: rgb(23, 62, 62);
-    transition: 0.3s;  
+    transition: 0.3s;
 }
-input, textarea{
-    padding:5px;  
+
+input,
+textarea {
+    padding: 5px;
 }
-#checkbox_newsletter, 
+
+#checkbox_newsletter,
 #checkbox_consent,
 #purchasebutton,
-.form__input{
-    margin:0.5rem;
+.form__input {
+    margin: 0.5rem;
 }
-#checkbox_newsletter,#checkbox_consent:hover{
-   cursor: pointer;  
+
+#checkbox_newsletter,
+#checkbox_consent:hover {
+    cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.active{
+
+.active {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-footer{
+
+footer {
     margin: 20px;
-    border-top:solid #1465DD;
+    border-top: solid #1465DD;
 }
-@media only screen and (min-width: 600px){
-    .menu-icon, .nav_logo_mobile{
-        display:none;
+
+@media only screen and (min-width: 600px) {
+
+    .menu-icon,
+    .nav_logo_mobile {
+        display: none;
     }
-    nav{ 
+
+    nav {
         position: static;
     }
+
     nav,
-    .nav_logo
-    {
+    .nav_logo {
         display: block;
     }
-    nav a{
+
+    nav a {
         color: rgb(0, 0, 0);
     }
-    nav li{
+
+    nav li {
         font-size: 2vw;
-        float: right; 
+        float: right;
         list-style: none;
-    }  
+    }
+
     nav a:hover,
-    a:hover{
+    a:hover {
         cursor: pointer;
-        color:#3E9730;
+        color: #ffffff;
         font-weight: bold;
         transition: 0.3s;
     }
-    .nav_logo{
-        color:#236718;
+
+    .nav_logo {
+        color: #236718;
         float: left;
         max-width: 140px;
         font-size: 25px;
-        padding:20px;
+        padding: 20px;
         background-color: rgba(255, 255, 255, 0.4);
     }
-    header{
-    padding-top:8em;
+
+    header {
+        padding-top: 8em;
     }
-    footer{
-    margin: 20px;
-    border-top:solid #1465DD;
+
+    h1 {
+        background-color: rgba(255, 255, 255, 0.6);
+        height: 5rem;
+        width: 33rem;
+        margin-right: 50%;
+        padding: 1rem;
+    }
+
+
+    input {
+        height: 2rem;
+        font-size: large;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 12px;
+        width: 33rem;
+    }
+
+    button {
+        background-color: #1465DD;
+        margin: 5px;
+        border: #1465DD;
+        padding: 5px;
+        height: 2rem;
+        width: 7rem;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 12px;
+    }
+
+    .formError {
+        display: none;
+        color: #e90e0e;
+        font-size: small;
+    }
+
+    footer {
+        margin: 20px;
+        border-top: solid #1465DD;
     }
 }
