@@ -111,6 +111,12 @@ input {
 
 }
 
+button:hover {
+    background-color: #126572;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+
 .numberOfTickets {
     margin-bottom: 3rem;
     margin-top: 3rem;
