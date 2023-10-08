@@ -1,129 +1,231 @@
-html{
+html {
     overflow-x: hidden;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
-body{
-    font-family: chelsea market; verdana, sans-serif;
+
+body {
+    font-family: chelsea market;
+    verdana,
+    sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #6598E4;
-}  
-p{
+    background-color: #91b3e6;
+}
+
+p {
     font-family: 'work sans', sans-serif;
 }
-#checkbox-menu:checked ~ nav,
+
+#checkbox-menu:checked~nav,
 nav a,
-.active{
+.active {
     display: block;
 }
-#checkbox-menu, nav{
-    display: none; 
+
+#checkbox-menu,
+nav {
+    display: none;
 }
-.fa{
-    padding:10px;   
+
+.fa {
+    padding: 10px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 10px;
     margin-top: 60px;
     font-weight: bold;
 }
-nav a:hover{
+
+nav a:hover {
     cursor: pointer;
-    color:#3E9730;
+    color: #ffffff;
     font-weight: bold;
     transition: 0.3s;
 }
-.nav_logo{
+
+.nav_logo {
     display: none;
     font-family: 'Rampart One', sans-serif;
     font-weight: bold;
 }
-nav{
+
+nav {
     position: absolute;
     background-color: rgb(0, 0, 0);
     opacity: 88%;
 }
-.nav_logo_mobile{
- text-align: center;
- text-decoration: none;
- color:#3E9730; 
- padding: 10px;
- font-family: 'rampart one';
- background-color: rgba(255, 255, 255, 0.4);
+
+.nav_logo_mobile {
+    text-align: center;
+    text-decoration: none;
+    color: #3E9730;
+    padding: 10px;
+    font-family: 'rampart one';
+    background-color: rgba(255, 255, 255, 0.4);
 }
-main{
+
+main {
     margin: 1.5em;
 }
-main, footer{
+
+main,
+footer {
     padding: 20px;
 }
-.header{
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 9rem;
+    width: 16rem;
+    margin-right: 50%;
+    padding: 1rem;
+}
+
+.header {
     background-image: url(/img/exhibition-1863344_1920V2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 2em;
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     text-shadow: 5px 5px rgb(218, 216, 216);
-    padding:10vw; 
-    border-top: solid #1465DD;  
+    padding: 10vw;
+    border-top: solid #1465DD;
+
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.active{
+
+.active {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-.frontpage_img{
-   max-width: 33.3%;
-   display: flex;  
+
+.frontpage_img {
+    max-width: 33.3%;
+    display: flex;
 }
-footer{
+
+input {
+    height: 2rem;
+    font-size: large;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 12px;
+}
+
+#question {
+    height: 6rem;
+}
+
+button {
+    background-color: #1465DD;
+    margin: 2px;
+    border: #1465DD;
+    padding: 5px;
+    height: 2rem;
+    width: 5rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #126572;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+
+#fullName,
+#email,
+#address,
+#question {
+    width: 10rem;
+}
+
+.formError {
+    display: none;
+    color: #e90e0e;
+    font-size: small;
+}
+
+footer {
     margin: 20px;
-    border-top:solid #1465DD;
+    border-top: solid #1465DD;
 }
-@media only screen and (min-width: 600px){
-    .menu-icon, .nav_logo_mobile{
-        display:none;  
+
+@media only screen and (min-width: 600px) {
+
+    .menu-icon,
+    .nav_logo_mobile {
+        display: none;
     }
-    nav{ 
+
+    nav {
         position: static;
         display: block;
     }
-    nav a{
+
+    nav a {
         color: rgb(0, 0, 0);
     }
-    nav li{
+
+    nav li {
         font-size: 2vw;
-        float: right; 
+        float: right;
         list-style: none;
-    }  
-    nav a:hover, a:hover{
+    }
+
+    nav a:hover,
+    a:hover {
         cursor: pointer;
-        color:#3E9730;
+        color: #ffffff;
         font-weight: bold;
         transition: 0.3s;
     }
-    .nav_logo{
-        color:#236718;
+
+    .nav_logo {
+        color: #236718;
         float: left;
         max-width: 140px;
         font-size: 25px;
         display: block;
-        padding:20px;
+        padding: 20px;
         background-color: rgba(255, 255, 255, 0.4);
     }
-    .header{
+
+    .header {
         margin-top: 4.5em;
     }
-    footer{
+
+    h1 {
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 9rem;
+        width: 23rem;
+        margin-right: 50%;
+        padding: 1rem;
+    }
+
+    #fullName,
+    #email,
+    #address,
+    #question {
+        width: 30rem;
+        border-radius: 1, 1, 0, 0, ;
+    }
+
+    footer {
         margin: 20px;
-        border-top:solid #1465DD;
+        border-top: solid #1465DD;
+    }
+}
     }
 }
 
