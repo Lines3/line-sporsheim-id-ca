@@ -1,51 +1,176 @@
-const form = document.querySelector("#formContact");
-const fullName = document.querySelector("#fullName");
-const fullNameError = document.querySelector("#fullNameError");
-const email = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
-const address = document.querySelector("#address");
-const addressError = document.querySelector("#addressError");
-const question = document.querySelector("#question");
-const questionError = document.querySelector("#questionError");
+<!DOCTYPE html>
+<html lang="en">
+<html>
 
-function validateForm() {
-    event.preventDefault();
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Rampart+One&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/eventsandexhibitions.css">
+    <title>Exhibitions</title>
+    <meta name="description"
+        content="Community Science Museum is a learning experience for children. Check out our website for more information.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9c9e06b11.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://fanciful-llama-45520e.netlify.app/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3684974, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
 
-    if (fullName.value.trim().length > 0) {
-        fullNameError.style.display = "none";
-    }
-    else {
-        fullNameError.style.display = "block";
-    }
+<body>
+    <div class="menu-wrapper">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu" class="menu-icon"><i class="fa fa-bars"></i></label>
+        <a href="/index.html" class="nav_logo_mobile">Community Science Museum</a>
+        <a href="/index.html" class="nav_logo">Community Science Museum</a>
+        <nav>
+            <ul>
+                <li><a href="/contact.html" class="nav_active">Contact</a></li>
+                <li><a href="/eventsandexhibitions.html" class="nav_active">Exhibitions</a></li>
+                <li><a href="/tickets.html" class="nav_active">Tickets</a></li>
+                <li><a href="/index.html" class="nav_active">Home</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="header">
+                <h1>Exhibitions</h1>
+            </div>
 
-    if (validateEmail(email.value) === true) {
-        emailError.style.display = "none";
-    }
-    else {
-        emailError.style.display = "block";
-    }
+        </header>
+        <main>
+            <section class="page_title">
+                <h2>Events & Exhibitions</h2>
+                <p>We have exciting new events in October. Find out more below.</p>
+            </section>
+            <div class="activities_item1">
+                <div class="activities_text1">
+                    <h2>
+                        Visiting Professor of Aeronautics
+                    </h2>
+                    <h3>1. october</h3>
+                    <p>
+                        It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of
+                        Technology will be delivering 3 lectures on the development of aeronautics and where the future
+                        lies in this exciting ‘space’.
+                    </p>
+                </div>
+            </div>
+            <div class="activities_item2">
+                <div class="activities_text2">
+                    <h2>
+                        The Mystery Mind
+                    </h2>
+                    <h3>
+                        10. october
+                    </h3>
+                    <p>
+                        Get your family together for an day at the museum as you explore the brain
+                        and science displays. re you ready to discover the minds secrets?
+                    </p>
+                </div>
+            </div>
+            <div class="activities_item3">
+                <div class="activities_text3">
+                    <h2>
+                        Energetica Exhibition on Loan
+                    </h2>
+                    <h3>
+                        17. october
+                    </h3>
+                    <p>
+                        On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the
+                        Community Science Museum. It’s a series of installations that allow visitors to experience the
+                        power of the elements as we harness them.
+                    </p>
+                </div>
+            </div>
+            <section class="container">
+                <h2>
+                    Our exhibitions
+                </h2>
+                <div class="item one">
+                    <h3>
+                        Cosmology
+                    </h3>
+                    <p>
+                        Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the
+                        night sky and what we can see and know about the universe around us. We’ll locate the various
+                        constellations and galaxies that can be seen and learn a bit about the early navigators who used
+                        the stars to travel by.
+                        Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to
+                        the latest exploration of the planets in our solar system.
+                    </p>
+                </div>
+                <div class="item two">
+                    <h3>
+                        Evolution
+                    </h3>
+                    <p>
+                        For centuries, philosophers and scientists have wrestled with the question of our origins. Where
+                        do we come from and how did we get here? Since Darwin proposed his theory of evolution we have
+                        had a framework for exploring and understanding our place in this world.
+                        Discover the origins of life on this planet and how the species we know today have evolved our
+                        time. You can also take some time to meet a few of the creatures who didn’t survive, including
+                        our Woolly Mammoth, the Dodos, and a number of dinosaurs too.
+                    </p>
+                </div>
+                <div class="item three">
+                    <h3>
+                        Biology and Medicine
+                    </h3>
+                    <p>
+                        From micro-organisms to the human body, major breakthroughs in biology are offering us unique
+                        insights into the great wonders of the tiny world.
+                        For many people their life expectancy is much longer and their quality of life much improved,
+                        thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the
+                        history of medicine and take a look at some major breakthroughs including the discovery of
+                        penicillin and the first heart transplant.
+                        Many of our great medicinal discoveries have come not only from the lab, but also from observing
+                        animals in the wild. Often our fellow creatures have beat us to it.
+                    </p>
+                </div>
+                <div class="item four">
+                    <h3>
+                        Robotics and AI
+                    </h3>
+                    <p>
+                        The information revolution is here and robotics and artificial intelligence are the science of
+                        the future. From useful home applications of AI to industrial uses of robotics, the future is
+                        here. You can even say hello and shake the hand of Rob the Robot.
+                    </p>
+                </div>
+                <div class="item five">
+                    <h3>
+                        Ecology
+                    </h3>
+                    <p>
+                        As we learn more and more of the impact humans are having on the planet, the more important it
+                        becomes that scientists explore how to create a sustainable future not just for humans but for
+                        the whole planet.
+                        In our ecology section of the museum, we unpack the dangers we currently face including global
+                        warming, extinction of species, and pollution. But we also focus on the positive ways we can all
+                        contribute to a brighter future.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <a href="/index.html" class="active">Home</a>
+                <a href="/tickets.html" class="active">Tickets</a>
+                <a href="/eventsandexhibitions.html" class="active">Exhibitions</a>
+                <a href="/contact.html" class="active">Contact</a>
+            </ul>
+            <p>Copyright &copy; Community Science Museum</p>
+        </footer>
+</body>
 
-    if (address.value.trim().length > 0) {
-        addressError.style.display = "none";
-    }
-    else {
-        addressError.style.display = "block";
-    }
-
-    if (question.value.trim().length > 0) {
-        questionError.style.display = "none";
-    }
-    else {
-        questionError.style.display = "block";
-    }
-
-    console.log("hei");
-};
-
-form.addEventListener("submit", validateForm);
-
-function validateEmail(email) {
-    const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(email);
-    return patternMatches;
-}
+</html>
