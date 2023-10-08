@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Rampart+One&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/confirmation_page.css">
+    <title>Confirmation</title>
+    <meta name="description"
+        content="Community Science Museum is a learning experience for children. Check out our website for more information.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9c9e06b11.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://fanciful-llama-45520e.netlify.app/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3684974, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+
+<body>
+    <div class="menu-wrapper">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu" class="menu-icon"><i class="fa fa-bars"></i></label>
+        <a href="/index.html" class="nav_logo_mobile">Community Science Museum</a>
+        <a href="/index.html" class="nav_logo">Community Science Museum</a>
+        <nav>
+            <ul>
+                <li><a href="/contact.html" class="nav_active">Contact</a></li>
+                <li><a href="/eventsandexhibitions.html" class="nav_active">Exhibitions</a></li>
+                <li><a href="/tickets.html" class="nav_active">Tickets</a></li>
+                <li><a href="/index.html" class="nav_active">Home</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="header">
+                <h1>Confirmation</h1>
+            </div>
+        </header>
+        <main>
+            <div class="thankYouMessage">
+                <h2>
+                    Thank you for your purchase
+                </h2>
+                <p>
+                    You will recieve a confirmation mail with you tickets shortly.
+                    Don't miss out on our exhibitions and events.
+                    We are excited to see you soon!
+                </p>
+            </div>
+            <div>
+                Don't miss out on our upcoming events:
+            </div>
+
+            <div class="explore_item1">
+                <div class="explore_text1">
+                    <h3>
+                        Visiting Professor of Aeronautics
+                    </h3>
+                    <h4>1. october</h3>
+                </div>
+            </div>
+            <section class="explore">
+                <div class="explore_item2">
+                    <div class="explore_text2">
+                        <h2>
+                            The Mistery Mind
+                        </h2>
+                        <h3>
+                            10. october
+                        </h3>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+    <a href="/eventsandexhibitions.html" class="page_links">Go to Exhibitions and find out more</a>
+
+    </main>
+    <footer>
+        <ul>
+            <a href="/index.html" class="active">Home</a>
+            <a href="/tickets.html" class="active">Tickets</a>
+            <a href="/eventsandexhibitions.html" class="active">Exhibitions</a>
+            <a href="/contact.html" class="active">Contact</a>
+        </ul>
+        <p>Copyright &copy; Community Science Museum</p>
+    </footer>
+</body>
+
+</html>
