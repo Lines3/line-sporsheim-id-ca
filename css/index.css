@@ -1,181 +1,232 @@
-html{
+html {
     overflow-x: hidden;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
-body{
-    font-family: chelsea market; verdana, sans-serif;
+
+body {
+    font-family: chelsea market, verdana, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #6598E4;   
-}  
-#checkbox-menu:checked ~ nav,
+    background-color: #91b3e6;
+}
+
+#checkbox-menu:checked~nav,
 nav a,
 .explore_cta,
-.active
-{
+.active {
     display: block;
 }
-#checkbox-menu, 
+
+#checkbox-menu,
 nav,
-.nav_logo
-{
-    display: none; 
+.nav_logo {
+    display: none;
 }
+
 .fa,
 .nav_logo_mobile,
 .explore_cta,
 .explore_item1,
-.explore_item2{
-    padding: 10px;   
+.explore_item2 {
+    padding: 10px;
 }
-nav a{
+
+nav a {
     font-weight: bold;
-    padding:10px;
+    padding: 10px;
     margin-top: 60px;
 }
-nav a:hover{
+
+nav a:hover {
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
-.nav_logo{
+
+.nav_logo {
     font-family: 'Rampart One', sans-serif;
     font-weight: bold;
 }
-nav{
+
+nav {
     position: absolute;
     background-color: rgb(0, 0, 0);
     opacity: 88%;
 }
-.nav_logo_mobile{
+
+.nav_logo_mobile {
     text-align: center;
     text-decoration: none;
-    color:#3E9730; 
+    color: #3E9730;
     font-family: 'rampart one';
     background-color: rgba(255, 255, 255, 0.4);
 }
-h2{
+
+h2 {
     text-align: center;
-    padding-top:50px;
-}  
-main{
-    margin-left:30px;
+    padding-top: 50px;
 }
+
+main {
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+}
+
 nav a:hover,
 header,
 .active,
 .explore_text1,
-.explore_text2
-{
-    color:rgb(0, 0, 0);
+.explore_text2 {
+    color: rgb(0, 0, 0);
 }
-.header{
+
+.header {
     background-image: url(/img/scott-webb-102825V2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2em;
     text-shadow: 5px 5px rgb(218, 216, 216);
-    padding:10vw; 
+    padding: 10vw;
     border-top: solid #1465DD;
 }
-.explore_cta{
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 5rem;
+    width: 19rem;
+    margin-right: 50%;
+    padding: 1rem;
+}
+
+a.page_links {
     background-color: #1465DD;
     outline: none;
     cursor: pointer;
-    margin-right:30px;
     text-align: center;
+    padding: 12px;
+    border-radius: 15px;
 }
-.explore_cta:hover{
+
+a.page_links:hover {
     background-color: #126572;
-    transition: 0.3s;  
-}
-a{
-    text-decoration: none;
+    transition: 0.3s;
     color: rgb(255, 255, 255);
 }
-.active{
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.active {
     text-decoration: none;
 }
-.frontpage_img{
-   max-width: 33.3%;
-   display: flex;  
+
+a.nav_active:hover {
+    color: rgb(255, 255, 255);
 }
+
+.frontpage_img {
+    max-width: 33.3%;
+    display: flex;
+}
+
 .explore_item1,
-.explore_item2{
-    border:solid;
+.explore_item2 {
+    border: solid;
     display: flex;
     flex-direction: column;
-    margin: 10px
-    background-repeat: no-repeat;
-    background-size: cover; 
+    margin: 10px, background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 50vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
+
 .explore_text1,
-.explore_text2{
+.explore_text2 {
     background-color: rgba(255, 255, 255, 0.6);
     height: 100%;
     width: 50%;
-    margin-right:50%;
+    margin-right: 50%;
     padding: 0px;
     text-align: center;
     border: solid rgb(0, 0, 0);
     font-size: 2vw;
 }
-.explore_text1{
-    margin-left:50%
+
+.explore_text1 {
+    margin-left: 50%
 }
-.explore_item1,
-.explore_item2{
-    max-width: 50vw;
-    margin-bottom: 30px;
-}
-.explore_item1{
+
+.explore_item1 {
     background-image: url(/img/andrew-ruiz-348421V2.jpg);
 }
-.explore_item2{
+
+.explore_item2 {
     background-image: url(/img/jesse-orrico-60373V2.jpg);
 }
-footer{
+
+.research_paragraph,
+.for_kids_paragraph {
+    margin-bottom: 3rem;
+}
+
+footer {
     margin: 20px;
-    border-top:solid #1465DD;
-}  
-@media only screen and (min-width: 600px){
-    .menu-icon, .nav_logo_mobile{
-        display:none;
+    border-top: solid #1465DD;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .menu-icon,
+    .nav_logo_mobile {
+        display: none;
     }
-    nav{ 
+
+    nav {
         position: static;
         display: block;
     }
-    nav a{
+
+    nav a {
         color: rgb(0, 0, 0);
     }
-    nav li{
+
+    nav li {
         font-size: 2vw;
-        float: right; 
+        float: right;
         list-style: none;
-    }  
-    nav a:hover, a:hover{
+    }
+
+    nav a:hover,
+    a:hover {
         cursor: pointer;
-        color:#215A17;
+        color: #ffffff;
         font-weight: bold;
         transition: 0.3s;
     }
-    .nav_logo{
-        color:#236718;
+
+    .nav_logo {
+        color: #236718;
         float: left;
         max-width: 140px;
         font-size: 25px;
         display: block;
-        padding:20px;
+        padding: 20px;
         background-color: rgba(255, 255, 255, 0.4);
     }
-    header{
-    padding-top:8em;
+
+    header {
+        padding-top: 8em;
     }
-    footer{
-    margin: 20px;
-    border-top:solid #1465DD;
+
+    footer {
+        margin: 20px;
+        border-top: solid #1465DD;
     }
 }
