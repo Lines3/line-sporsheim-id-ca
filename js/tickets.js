@@ -16,6 +16,7 @@ const expiryDate = document.querySelector("#expiryDate");
 const expiryDateError = document.querySelector("#expiryDateError");
 const securityCode = document.querySelector("#securityCode");
 const securityCodeError = document.querySelector("#securityCodeError");
+const purchaseButton = document.querySelector("#purchaseButton");
 
 function validateForm() {
     event.preventDefault();
@@ -86,4 +87,13 @@ function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(email);
     return patternMatches;
+}
+
+//question for teacher: how do I do the onclick function correctly?
+//I would like to make the purchase button into a link where the 
+//user is taken to the confirmation page. How can I do that as well as 
+//having the form validation running?
+
+purchaseButton.onclick = function () {
+
 }
